@@ -7,6 +7,24 @@ from itertools import combinations
 class SetEvaluator(object):
     """Evaluate if the selected cards are a 'set' or not"""
 
+    def find_a_set(self, cards):
+        """Find the next possible set. Returns False if there is no set available"""
+        all_cards_combinations = list(set(combinations(cards, 3)))
+
+        for pack_of_cards in all_cards_combinations:
+            if self.is_set(pack_of_cards):
+                return pack_of_cards
+        return False
+
+    def is_there_any_combination(self, cards):
+        """Evaluate if there is any combination for the provided cards"""
+        all_cards_combinations = list(set(combinations(cards, 3)))
+
+        for pack_of_cards in all_cards_combinations:
+            if self.is_set(pack_of_cards):
+                return True
+        return False
+
     def is_set(self, cards):
         NUMBER_OF_REQUIRED_CARDS = 3
 
