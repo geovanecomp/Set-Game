@@ -25,7 +25,7 @@ class Attribute(object):
 
 class Shape(Attribute):
     """
-    Representaion of the three possible shapes:
+    Representation of the three possible shapes:
     Ovals, Diamonds and Squiggles.
     """
 
@@ -37,7 +37,7 @@ class Shape(Attribute):
 
 class Color(Attribute):
     """
-    Representaion of the three possible colors:
+    Representation of the three possible colors:
     Red, Green and Purple.
     """
 
@@ -49,7 +49,7 @@ class Color(Attribute):
 
 class Quantity(Attribute):
     """
-    Representaion of the three possible Quantities:
+    Representation of the three possible Quantities:
     One, Two and Three.
     """
 
@@ -61,7 +61,7 @@ class Quantity(Attribute):
 
 class Shade(Attribute):
     """
-    Representaion of the three possible shades:
+    Representation of the three possible shades:
     Solid, Striped and Open (or None).
     """
 
